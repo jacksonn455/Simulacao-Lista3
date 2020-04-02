@@ -28,45 +28,128 @@
     <main>
         <section class="projeto">
             <div class="container">
-            <ul id="mensagens-erro">
+                <ul id="mensagens-erro">
 
-            </ul>
-            <form id="form-adiciona" name="formularioAdiciona">
-                <div>
-                    <label for="tempo">Tempo estimado:</label>
-                    <input type="number"  id="tempo" name="tempo" placeholder="digite o tempo em minutos" class="campo">
-                </div>
-                <div>
-                    <label for="tempo">Tempo entre chegadas:</label>
-                    <input type="number"  id="tempo" name="tempo" placeholder="digite o tempo em minutos" class="campo">
-                </div>
-                <div>
-                    <label for="tempo">Tempo de serviço:</label>
-                    <input type="number"  id="tempo" name="tempo" placeholder="digite o tempo em minutos" class="campo">
-                </div>
-                <button id="adicionar-paciente" class="botao bto-principal">Simular</button>
+                </ul>
+                <form id="form-adiciona" name="formularioAdiciona">
+                    <div>
+                        <label for="tempo">Tempo estimado:</label>
+                        <input type="number" id="tempo" name="tempo" placeholder="digite o tempo em minutos"
+                            class="campo">
+                    </div>
+
+                    <div>
+                        <label for="tempoChegada">Tempo entre chegadas:</label>
+                    </div>
+                    <div class="grupo">
+                        <label for="chegadaA">A:</label>
+                        <input type="number" id="chegadaA" name="chegadaA" placeholder="" class="campo">
+                    </div>
+                    <div class="grupo">
+                        <label for="chegadaB">B:</label>
+                        <input type="number" id="chegadaB" name="chegadaB" placeholder="" class="campo campo-medio">
+                    </div>
+                    <div class="grupo">
+                        <label for="chegadaC">C:</label>
+                        <input type="number" id="chegadaC" name="chegadaC" placeholder="" class="campo campo-medio">
+                    </div>
+                    <div>
+                        <label for="tempoServicoServico">Tempo de serviço:</label>
+                    </div>
+                    <div class="grupo">
+                        <label for="servicoA">A:</label>
+                        <input type="number" id="servicoA" name="servicoA" placeholder="" class="campo">
+                    </div>
+                    <div class="grupo">
+                        <label for="servicoB">B:</label>
+                        <input type="number" id="servicoB" name="servicoB" placeholder="" class="campo campo-medio">
+                    </div>
+                    <div class="grupo">
+                        <label for="servicoC">C:</label>
+                        <input type="number" id="servicoC" name="servicoC" placeholder="" class="campo campo-medio">
+                    </div>
+                    <button id="adicionar-paciente" class="botao bto-principal">Simular</button>
         </section>
 
-		<section class="container" id="tabela">
-			<h2>Lavagem de Carros</h2>
-			<table>
-				<thead>
-					<tr>
-						<th>Cliente</th>
-						<th>Tempo desde a última chegada</th>
-						<th>Tempo de chegada no relógio da simulação</th>
-						<th>Tempo de serviço</th>
+        <section class="container" id="tabela">
+            <h2>Lavagem de Carros</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Tempo desde a última chegada</th>
+                        <th>Tempo de chegada no relógio da simulação</th>
+                        <th>Tempo de serviço</th>
                         <th>Tempo de inicio do serviço no relógio da simulação</th>
                         <th>Tempo do cliente na fila</th>
-						<th>Tempo final do serviço no relógio da simulação</th>
-						<th>Tempo do cliente no sistema</th>
-						<th>Tempo livre do operador</th>
-					</tr>
-				</thead>
-				<tbody id="tabela-pacientes">
-				</tbody>
-			</table>
+                        <th>Tempo final do serviço no relógio da simulação</th>
+                        <th>Tempo do cliente no sistema</th>
+                        <th>Tempo livre do operador</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-pacientes">
+                </tbody>
+            </table>
         </section>
+
+        <section class="projeto">
+            <div class="container">
+                <h2>Resultado final</h2>
+                <form>
+                    <div class="resultado">
+                        <label for="tempo">Tempo médio de espera na fila:</label>
+                    </div>
+                    <div class="grupo-dois">
+                        <input type="number" id="servicoB" name="servicoB" placeholder="" class="campo" disabled>
+                    </div>
+                    <div class="grupo-dois">
+                        <input id="servicoC" name="servicoC" placeholder="" class="campo-dois campo-medio"
+                            value="minutos" disabled>
+                    </div>
+                    <div>
+                        <label for="tempo">Probabilidade de um cliente esperar na fila:</label>
+                    </div>
+                    <div class="grupo-dois">
+                        <input type="number" id="servicoB" name="servicoB" placeholder="" class="campo" disabled>
+                    </div>
+                    <div class="grupo-dois">
+                        <input id="servicoC" name="servicoC" placeholder="" class="campo-dois campo-medio" value="%"
+                            disabled>
+                    </div>
+                    <div>
+                        <label for="tempo">Probabilidade do operador livre:</label>
+                    </div>
+                    <div class="grupo-dois">
+                        <input type="number" id="servicoB" name="servicoB" placeholder="" class="campo campo-medio" disabled>
+                    </div>
+                    <div class="grupo-dois">
+                        <input id="servicoC" name="servicoC" class="campo-dois campo-medio" value="%" disabled>
+                    </div>
+                    <div>
+                        <label for="tempo">Tempo médio de serviço:</label>
+                    </div>
+                    <div class="grupo-dois">
+                        <input type="number" id="servicoB" name="servicoB" placeholder="" class="campo" disabled>
+                    </div>
+                    <div class="grupo-dois">
+                        <input id="servicoC" name="servicoC" class="campo-dois campo-medio" value="minutos" disabled>
+                    </div>
+                    <div>
+                        <label for="tempo">Tempo médio despendido no sitema:</label>
+                    </div>
+                    <div class="grupo-dois">
+                        <input type="number" id="servicoB" name="servicoB" placeholder="" class="campo" disabled>
+                    </div>
+                    <div class="grupo-dois">
+                        <input id="servicoC" name="servicoC" placeholder="" class="campo-dois campo-medio"
+                            value="minutos" disabled>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/tabela.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@ header{
 
 }
 
+
 .titulo-nome{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
@@ -29,6 +30,12 @@ header{
 
 .grupo{
 	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+.grupo-dois{
+	width: 45%;
 	display: inline-block;
 	padding: 10px 0px;
 }
@@ -56,6 +63,16 @@ header{
 .campo-medio{
 	display: inline-block;
 	padding-right: .5em;
+}
+
+.campo-dois{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 30%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	color: #000;
+	margin-bottom: 20px;
 }
 
 button{
@@ -151,7 +168,6 @@ section h2{
 	font-size: 3em;
 	display: block;
 	padding-bottom: .5em;
-	border-bottom: 1px solid #ccc;
 	margin-bottom: .5em;
 }
 
@@ -176,5 +192,18 @@ th{
 
 #tabela{
 	margin-bottom: 100px;
+	text-align: center;
+}
+
+.placar {
+    display: none;
+}
+
+#erro{
+    color: red;
+    display: none;
+}
+
+.centro{
 	text-align: center;
 }
