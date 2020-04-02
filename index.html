@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Tabela de Simulação</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container caixa">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="foto-perfil" src="img/img2.png" alt="Foto de perfil do Jackson Felipe Magnabosco">
+                </div>
+
+                <div class="col-lg-6">
+                    <h1 class="titulo-nome">Tabela de Simulação</h1>
+                </div>
+            </div>
+    </header>
+    <main>
+        <section class="projeto">
+            <div class="container">
+            <ul id="mensagens-erro">
+
+            </ul>
+            <form id="form-adiciona" name="formularioAdiciona">
+                <div>
+                    <label for="tempo">Tempo estimado:</label>
+                    <input type="number"  id="tempo" name="tempo" placeholder="digite o tempo em minutos" class="campo">
+                </div>
+                <div>
+                    <label for="tempo">Tempo entre chegadas:</label>
+                    <input type="number"  id="tempo" name="tempo" placeholder="digite o tempo em minutos" class="campo">
+                </div>
+                <div>
+                    <label for="tempo">Tempo de serviço:</label>
+                    <input type="number"  id="tempo" name="tempo" placeholder="digite o tempo em minutos" class="campo">
+                </div>
+                <button id="adicionar-paciente" class="botao bto-principal">Simular</button>
+        </section>
+
+		<section class="container" id="tabela">
+			<h2>Lavagem de Carros</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Cliente</th>
+						<th>Tempo desde a última chegada</th>
+						<th>Tempo de chegada no relógio da simulação</th>
+						<th>Tempo de serviço</th>
+                        <th>Tempo de inicio do serviço no relógio da simulação</th>
+                        <th>Tempo do cliente na fila</th>
+						<th>Tempo final do serviço no relógio da simulação</th>
+						<th>Tempo do cliente no sistema</th>
+						<th>Tempo livre do operador</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-pacientes">
+				</tbody>
+			</table>
+        </section>
+</body>
+
+</html>
