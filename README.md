@@ -6,4 +6,4 @@ Programa 2 para matéria de simulação
 - Determine as mesmas estatísticas calculadas anteriormente.
 
 --------------------
- ![]()
+ ![](https://github.com/jacksonn455/Simulacao-Lista3/blob/master/imagem.png)
