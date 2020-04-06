@@ -60,21 +60,6 @@ header {
     margin-bottom: 20px;
 }
 
-.campo-medio {
-    display: inline-block;
-    padding-right: .5em;
-}
-
-.campo-dois {
-    margin: 0;
-    padding-bottom: 1em;
-    width: 30%;
-    border: 1px solid #ccc;
-    padding: .7em;
-    color: #000;
-    margin-bottom: 20px;
-}
-
 button {
     padding: .5em 2em;
     border: 0;
@@ -189,7 +174,7 @@ th {
 }
 
 #tabela {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -206,15 +191,10 @@ th {
     text-align: center;
 }
 
-.divMain {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 10px;
-    overflow: hidden;
-}
-
 #divErro {
     color: red;
+}
+
+.tempo {
+    margin-top: 20px;
 }

@@ -30,34 +30,25 @@
             <div class="container">
                 <div class="divMain">
 
-                    <div style="margin-top: 20px;">
-                        <label>Tempo da simulação (minutos):</label>
-                        <input id="ipMinutos" type="number" class="inputText campo" value="180" tabindex="1">
-                        <br />
-                        <button id="btnSimular" class="btn" type="submit" onclick="simular()" tabindex="0">Simular</button>
+                    <div>
+                        <label class="tempo">Tempo da simulação (minutos):</label>
+                        <input id="ipMinutos" type="number" class="campo" tabindex="1" placeholder=" O tempo deve ser em minutos">
+                    </div>
+
+                    <div>
+                        <label>Tempo entre chagadas: </label>
+                        <input id="ipTEC" class="campo" tabindex="2" placeholder="coloque os valores separados por ponto e vírgula (;)">
+                    </div>
+
+                    <div>
+                        <label>Tempo de serviço: </label>
+                        <input id="ipTS" class="campo" tabindex="3" placeholder="coloque os valores separados por ponto e vírgula (;)">
                         <div id="divErro"></div>
                     </div>
-
-                    <div style="margin-top: 20px;">
-                        <label>Tempo entre chagadas: </label>
-                        <input id="ipTEC" class="inputText campo" value="10;12;15" tabindex="2">
-                        <br />
-                        <span style="font-size: small;">coloque os valores separados por ponto e vírgula (;)</span>
-                    </div>
-
-                    <div style="margin-top: 20px;">
-                        <label>Tempo de serviço: </label>
-                        <input id="ipTS" class="inputText campo" value="9;10;11" tabindex="3">
-                        <br />
-                        <span style="font-size: small;">coloque os valores separados por ponto e vírgula (;)</span>
-                    </div>
+                    <button id="btnSimular" class="btn" type="submit" onclick="simular()" tabindex="0">Simular</button>
                 </div>
             </div>
         </section>
-
-        <div class="divMain" style="text-align: center;">
-            <span id="spanResultado"></span>
-        </div>
 
         <section class="container" id="tabela">
             <h2>Lavagem de Carros</h2>
@@ -73,6 +64,15 @@
                     <th>Tempo do cliente no sistema (minutos)</th>
                     <th>Tempo livre do operador (minutos)</th>
                 </table>
+            </div>
+        </section>
+
+
+        <section class="projeto">
+            <div class="container">
+                <div class="tempo">
+                    <span id="spanResultado"></span>
+                </div>
             </div>
         </section>
     </main>
