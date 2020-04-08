@@ -198,3 +198,19 @@ th {
 .tempo {
     margin-top: 20px;
 }
+
+.campo-dois {
+    margin: 0;
+    padding-bottom: 1em;
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: .7em;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.grupo-dois {
+    width: 45%;
+    display: inline-block;
+    padding: 10px 0px;
+}

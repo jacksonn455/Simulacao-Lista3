@@ -67,12 +67,56 @@
             </div>
         </section>
 
-
         <section class="projeto">
             <div class="container">
-                <div class="tempo">
-                    <span id="spanResultado"></span>
-                </div>
+                <h2>Resultado final</h2>
+                <form>
+                    <div class="resultado">
+                        <label for="tempo">Tempo médio de espera na fila:</label>
+                    </div>
+                    <div class="grupo-dois">
+                        <input type="number" id="tempoMedioFila" name="tempoMedioFila" placeholder="" class="campo" disabled>
+                    </div>
+                    <div class="grupo-dois">
+                        <input class="campo-dois campo-medio" value="minutos" disabled>
+                    </div>
+                    <div>
+                        <label for="tempo">Probabilidade de um cliente esperar na fila:</label>
+                    </div>
+                    <div class="grupo-dois">
+                        <input type="number" id="probabilidadeClienteFila" name="probabilidadeClienteFila" placeholder="" class="campo" disabled>
+                    </div>
+                    <div class="grupo-dois">
+                        <input class="campo-dois campo-medio" value="%" disabled>
+                    </div>
+                    <div>
+                        <label for="tempo">Probabilidade do operador livre:</label>
+                    </div>
+                    <div class="grupo-dois">
+                        <input type="number" id="probabilidadeOperadorLivre" name="probabilidadeOperadorLivre" placeholder="" class="campo campo-medio" disabled>
+                    </div>
+                    <div class="grupo-dois">
+                        <input class="campo-dois campo-medio" value="%" disabled>
+                    </div>
+                    <div>
+                        <label for="tempo">Tempo médio de serviço:</label>
+                    </div>
+                    <div class="grupo-dois">
+                        <input type="number" id="tempoMedioServico" name="tempoMedioServico" placeholder="" class="campo" disabled>
+                    </div>
+                    <div class="grupo-dois">
+                        <input class="campo-dois campo-medio" value="minutos" disabled>
+                    </div>
+                    <div>
+                        <label for="tempo">Tempo médio despendido no sitema:</label>
+                    </div>
+                    <div class="grupo-dois">
+                        <input type="number" id="tempoMedioSistema" name="tempoMedioSistema" placeholder="" class="campo" disabled>
+                    </div>
+                    <div class="grupo-dois">
+                        <input class="campo-dois campo-medio" value="minutos" disabled>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
